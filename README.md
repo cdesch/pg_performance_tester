@@ -62,3 +62,30 @@
     pgbench -c 8 -j 2 -T 600 bench
     pgbench -c 64 -j 4 -T 600 bench
     pgbench -c 64 -j 4 -T 600 -N bench
+
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/kickinespresso/espresso_path. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+When making pull requests, please be sure to update the [CHANGELOG.md](CHANGELOG.md) with the corresponding changes.
+
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## Sponsors
+
+This project is sponsored by [KickinEspresso](https://kickinespresso.com/?utm_source=github&utm_medium=sponsor&utm_campaign=opensource)
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/kickinespresso/ex_gtin/tags).
+
+
+## Code of Conduct
+
+Please refer to the [Code of Conduct](CODE_OF_CONDUCT.md) for details
