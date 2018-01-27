@@ -36,24 +36,6 @@ random_page_cost = 1.1
 
 
 
-pgbench -i -s 15 bench1
-pgbench -c 4 -j 2 -T 600 bench1 
-
-pgbench -i -s 70 bench2
-pgbench -c 4 -j 2 -T 600 bench2 -P 5
-pgbench -c 4 -j 2 -T 600 -S bench2 -P 10
-pgbench -c 4 -j 2 -T 600 -N bench2 -P 10
-
-
-pgbench -i -s 600 bench3
-pgbench -c 4 -j 2 -T 600 bench3 -P 10
-
-
-pgbench -i -s 30 bench
-pgbench -c 1 -T 600 bench
-pgbench -c 8 -j 2 -T 600 bench
-pgbench -c 64 -j 4 -T 600 bench
-pgbench -c 64 -j 4 -T 600 -N bench
 
 # Batch DB Setup
 
@@ -65,3 +47,17 @@ create database bench2;
 create database bench3;
 
 
+# Test Commands
+
+pgbench -c 4 -j 2 -T 600 bench1 
+
+pgbench -c 4 -j 2 -T 600 bench2
+pgbench -c 4 -j 2 -T 600 -S bench2
+pgbench -c 4 -j 2 -T 600 -N bench2
+
+pgbench -c 4 -j 2 -T 600 bench3
+
+pgbench -c 1 -T 600 bench
+pgbench -c 8 -j 2 -T 600 bench
+pgbench -c 64 -j 4 -T 600 bench
+pgbench -c 64 -j 4 -T 600 -N bench
